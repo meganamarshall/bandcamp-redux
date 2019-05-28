@@ -8,7 +8,7 @@ static propTypes = {
 }
 
 state = {
-  isbn: null
+  isbn: ''
 }
 
 handleSubmit = event => {
@@ -26,7 +26,7 @@ updateIsbn = ({ target }) => {
 render() {
   return (
     <form onSubmit={this.handleSubmit}>
-      <input type="number" value={this.state.isbn} onChange={this.updateIsbn} />
+      <input type="text" value={this.state.isbn} onChange={this.updateIsbn} />
       <button>Submit</button>
     </form>
   );

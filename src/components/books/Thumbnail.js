@@ -8,7 +8,7 @@ function Thumbnail({ isbn }) {
 }
 
 Thumbnail.propTypes = {
-  isbn: PropTypes.number.isRequired
+  isbn: PropTypes.string.isRequired
 };
 
 export default Thumbnail;
