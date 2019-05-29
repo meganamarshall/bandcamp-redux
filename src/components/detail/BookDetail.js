@@ -2,13 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CreateComment from '../../containers/CreateComment';
 import CommentsByIsbn from '../../containers/CommentsByIsbn';
+import BookInfo from './BookInfo';
 
 function BookDetail({ isbn }) {
   return (
     <>
       <section>
         <img src={`http://covers.openlibrary.org/b/isbn/${isbn}-L.jpg`} />
-        {/* <BookReviews isbn={isbn} /> */}
+        <BookInfo isbn={isbn} />
       </section>
       <section>
         <CreateComment isbn={isbn}/>
