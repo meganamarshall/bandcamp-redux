@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import CreateComment from '../../containers/CreateComment';
 
 function BookDetail({ isbn }) {
   return (
@@ -9,8 +10,8 @@ function BookDetail({ isbn }) {
         {/* <BookReviews isbn={isbn} /> */}
       </section>
       <section>
-        {/* <CommentForm isbn={isbn} />
-        <Comments isbn={isbn} /> */}
+        <CreateComment isbn={isbn}/>
+        {/* <Comments isbn={isbn} />  */}
       </section>
     </>
   );
