@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Comment({ isbn, comment, deleteComment }) {
+function Comment({ id, comment, deleteComment }) {
   return (
     <>
       <p>{comment}</p>
-      <button onClick={deleteComment.bind(null, isbn)}>Delete Comment</button>
+      <button onClick={deleteComment.bind(null, id)}>Delete Comment</button>
     </>
   );
 }
 
 Comment.propTypes = {
-  isbn: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
   comment: PropTypes.string.isRequired,
   deleteComment: PropTypes.func.isRequired
 };

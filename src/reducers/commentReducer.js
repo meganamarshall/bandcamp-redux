@@ -14,6 +14,7 @@ export default function reducer(state = initialState, action) {
         ]
       };
     case DELETE_COMMENT:
+      console.log(action);
       return {
         ...state,
         [action.payload.isbn]: [

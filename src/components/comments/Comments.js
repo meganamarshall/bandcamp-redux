@@ -6,7 +6,7 @@ function Comments({ comments, deleteComment }) {
   const commentList = comments.map((comment, i)=> {
     return (
       <li key={i}>
-        <Comment comment={comment} deleteComment={deleteComment} />
+        <Comment comment={comment} id={i} deleteComment={deleteComment} />
       </li>
     );
   });
@@ -18,7 +18,8 @@ function Comments({ comments, deleteComment }) {
 
 Comments.propTypes = {
   comments: PropTypes.array.isRequired,
-  deleteComment: PropTypes.func.isRequired
+  deleteComment: PropTypes.func.isRequired,
+  isbn: PropTypes.string.isRequired
 };
 
 export default Comments;
