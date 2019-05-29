@@ -19,13 +19,16 @@ export default class BookInfo extends PureComponent {
         this.setState({ title: results.title, authors: results.authors, description: results.description });
       });
   }
-  
   render() {
-    const { title, authors, description } = this.state;
+    const authorList = this.state.authors.map(author => {
+      return <h4 key={author}>{author}</h4>;
+    });
+    const { title, description } = this.state;
     return (
       <>
       <h2>{title}</h2>
-      <h3>{authors}</h3>
+      <h3>Authors:</h3>
+      <section>{authorList}</section>
       <p>{description}</p>
     </>
     );
