@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Thumbnail component renders thumbnail 1`] = `
+<Link
+  to="/222"
+>
+  <p>
+    222
+  </p>
+  <img
+    alt="Image not found"
+    src="http://covers.openlibrary.org/b/isbn/222-M.jpg"
+  />
+</Link>
+`;

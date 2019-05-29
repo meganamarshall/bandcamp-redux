@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Comments component renders Comments 1`] = `
+<ul>
+  <li
+    key="0"
+  >
+    <Comment
+      comment="Comments"
+      deleteComment={[MockFunction]}
+      id={0}
+    />
+  </li>
+  <li
+    key="1"
+  >
+    <Comment
+      comment="commentsss"
+      deleteComment={[MockFunction]}
+      id={1}
+    />
+  </li>
+</ul>
+`;

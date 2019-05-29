@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Comment component renders Comment 1`] = `
+<Fragment>
+  <p>
+    comment
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Delete Comment
+  </button>
+</Fragment>
+`;

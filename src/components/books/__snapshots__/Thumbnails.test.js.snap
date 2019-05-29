@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Thumbnail component renders thumbnail 1`] = `
+<ul>
+  <li
+    key="222"
+  >
+    <Thumbnail
+      isbn="222"
+    />
+  </li>
+  <li
+    key="333"
+  >
+    <Thumbnail
+      isbn="333"
+    />
+  </li>
+</ul>
+`;
