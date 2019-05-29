@@ -19,7 +19,6 @@ function Comments({ comments, deleteComment }) {
 Comments.propTypes = {
   comments: PropTypes.array.isRequired,
   deleteComment: PropTypes.func.isRequired,
-  isbn: PropTypes.string.isRequired
 };
 
 export default Comments;
