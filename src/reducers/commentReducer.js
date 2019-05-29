@@ -5,7 +5,6 @@ const initialState = {};
 export default function reducer(state = initialState, action) {
   switch(action.type) {
     case CREATE_COMMENT:
-      console.log(action);
       return {
         ...state,
         [action.payload.isbn]: [
@@ -14,7 +13,6 @@ export default function reducer(state = initialState, action) {
         ]
       };
     case DELETE_COMMENT:
-      console.log(action);
       return {
         ...state,
         [action.payload.isbn]: [
